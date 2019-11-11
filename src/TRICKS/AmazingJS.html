@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>amazing JS</title>
+	<script>
+	window.onload = () => {
+		test (42/'зелёный');
+		test (42/0);
+		test (-42/0);
+		test (0);
+		test (undefined);
+		test (false);
+		test (null);
+		test ('');
+		test ([]);
+		test ([1]);
+		test ({});
+	}
+
+	function test (patient) {
+
+		console.log('Patient:', patient);
+		console.log('Type:', typeof patient);
+		console.log('To string: ', patient == undefined ? 'NO_DEFINED' : patient.toString());
+
+		if(patient)
+			console.log(patient, 'is a true');
+		else
+			console.log(patient, 'is a lie');
+
+		console.log('ternary:', patient, patient ? 'is a true' : 'is a lie');
+
+		patient == undefined && console.log(patient, '== undefined');
+		patient == false && console.log(patient, '== false');
+		patient == true &&	console.log(patient, '== true');
+		patient == 0 && console.log(patient, '== 0');
+		patient == null &&	console.log(patient, '== null');
+		patient == '' &&	console.log(patient, '== \'\'');
+		patient == NaN && console.log(patient, '== NaN');
+		patient == Infinity &&	console.log(patient, '== Infinity');
+		patient == -Infinity && console.log(patient, '== -Infinity');
+		patient == [] &&	console.log(patient, '== []');
+		patient == {} &&	console.log(patient, '== {}');
+		console.log('-------------------------------------------------');
+	}
+	</script>
+</head>
+<body></body>
+</html>
