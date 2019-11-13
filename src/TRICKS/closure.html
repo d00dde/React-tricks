@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Замыкание</title>
+	<script>
+	window.onload = () => {
+		function counterCreator (init) {
+			let counter = init;
+			return {
+				add: function () { counter++;},
+				get: function () { return counter;}
+			}
+		}
+
+		const counter_1 = counterCreator (0);
+		const counter_2 = counterCreator (100);
+
+		console.log("counter_1:", counter_1.get());
+		console.log("counter_2:", counter_2.get());
+
+		counter_1.add();
+		counter_2.add();
+		counter_2.add();
+
+		console.log("counter_1:", counter_1.get());
+		console.log("counter_2:", counter_2.get());
+
+	}
+	</script>
+</head>
+<body></body>
+</html>
