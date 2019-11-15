@@ -8,6 +8,6 @@ export default (type, value) => {
 					return 'mediumPass';
 				return 'easyPass';
 		case 'email':
-			return 'TODO';
+			return console.log('TODO');
 	}
 }

@@ -33,3 +33,8 @@
 	position: absolute;
 	top: 40px;
 }
+
+.mtrlz-input .show-btn {
+	position: absolute;
+	right: 0;
+}

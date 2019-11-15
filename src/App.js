@@ -8,7 +8,7 @@ export default () => (
   							 'alignItems': 'center'
   							}}>
      <Input label='Label'
-     			  type='password'
+     			  type='password5'
      			  verify
      			  color={null}/>
 

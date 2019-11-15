@@ -40,6 +40,7 @@ export default (props) => {
 						 onBlur={blurHandler}
 						 value={value}/>
 			<label htmlFor={id} className={labelClasses.join(' ')}>{props.label}</label>
+			{props.type === 'password' || <img className='show-btn'>Show</img>}
 			<div className='tooltip'>{tipMessage}</div>
 		</div>
 	);
