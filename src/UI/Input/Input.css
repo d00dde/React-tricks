@@ -1,6 +1,6 @@
 .mtrlz-input {
 	position: relative;
-	width: 200px;
+	width: 240px;
 	height: 30px;
 	-ms-align-items: center;
 	align-items: center;
@@ -8,10 +8,12 @@
 
 .mtrlz-input input{
 	position: absolute;
+	width: 240px;
 	border: none;
 	border-bottom: 2px solid;
 	font-size: 20px;
 	outline: none;
+	transition: all .3s;
 }
 
 .mtrlz-input label {
@@ -24,17 +26,30 @@
 	transition: all .3s;
 }
 
-.mtrlz-input .focus {
+.mtrlz-input .label-focus {
 	font-size: 12px;
 	top: -12px;
-	color: blue;
+	color: #2196f3;
 }
+
+.mtrlz-input .input-focus {
+	border-color: #2196f3;
+}
+
 .mtrlz-input .tooltip {
 	position: absolute;
-	top: 40px;
+	left: 110%;
+	width: 300px;
 }
 
 .mtrlz-input .show-btn {
 	position: absolute;
+	height: 100%;
 	right: 0;
+	bottom: 5px;
+	cursor: pointer;
+}
+
+.mtrlz-input .show-btn img {
+	height: 100%;
 }

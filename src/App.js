@@ -8,9 +8,8 @@ export default () => (
   							 'alignItems': 'center'
   							}}>
      <Input label='Label'
-     			  type='password5'
-     			  verify
-     			  color={null}/>
+     			  type='password'
+     			  verify />
 
     </div>
   );

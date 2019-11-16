@@ -6,8 +6,14 @@ export default (type, value) => {
 					return 'strongPass';
 				if(data.mediumRegex.test(value))
 					return 'mediumPass';
+				if(value === '')
+					return 'emptyPass';
 				return 'easyPass';
 		case 'email':
-			return console.log('TODO');
+			if(data.emailRegex.test(value))
+				return true;
+			return false;
+		default:
+			return false
 	}
 }
